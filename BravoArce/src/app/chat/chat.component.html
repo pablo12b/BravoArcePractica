@@ -1,0 +1,17 @@
+<div class="chat-container">
+  <div class="messages-container">
+    <!-- Iterar sobre los mensajes y mostrarlos -->
+    <div class="message" *ngFor="let message of messages">
+      <!-- Aplicar estilos diferentes para los mensajes enviados y recibidos -->
+      <div class="message-bubble" [ngClass]="{ 'sent-message': message.isLocal, 'received-message': !message.isLocal }">
+        {{ message.text }}
+      </div>
+    </div>
+  </div>
+  <div class="input-container">
+    <!-- Input para escribir nuevos mensajes -->
+    <input type="text" [(ngModel)]="newMessage" placeholder="Escribe un mensaje...">
+    <!-- Botón para enviar mensajes -->
+    <button (click)="sendMessage()">Enviar</button>
+  </div>
+</div>

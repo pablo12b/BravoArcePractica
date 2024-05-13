@@ -1,0 +1,61 @@
+/* Estilos para el contenedor principal del chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Estilos para el contenedor de los mensajes */
+.messages-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Estilos para el bocadillo del mensaje */
+.message-bubble {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+/* Estilos para los mensajes enviados */
+.sent-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end; /* Alinea los mensajes enviados a la derecha */
+}
+
+/* Estilos para los mensajes recibidos */
+.received-message {
+  background-color: #e5e5ea;
+  color: black;
+  align-self: flex-start; /* Alinea los mensajes recibidos a la izquierda */
+}
+
+/* Estilos para el contenedor de entrada de texto y botón */
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
