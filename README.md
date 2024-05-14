@@ -8,7 +8,7 @@ Para poder ejecutar nuestra imagen con la aplicacion deberemos realizar la docum
 ```bash
 docker run -d --name <nombre-contenedor> -p 3000:3000 pavlo12/practicavirtu:latest
 ```
-![Texto alternativo](imgs/container.png)
+![Texto alternativo](img/container.png)
 
 2. Para poder si el contenedor inicio realizaremos el siguiente comando:
 ```bash
