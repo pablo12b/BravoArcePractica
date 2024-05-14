@@ -8,21 +8,26 @@ Para poder ejecutar nuestra imagen con la aplicacion deberemos realizar la docum
 ```bash
 docker run -d --name <nombre-contenedor> -p 3000:3000 pavlo12/practicavirtu:latest
 ```
-![Texto alternativo](img/containter.png)
+![Imagen de prueba](img/containter.png)
 
 2. Para poder si el contenedor inicio realizaremos el siguiente comando:
 ```bash
 docker ps
 ```
+![Imagen de prueba](img/docker.png)
+
 3. Luego si queremos ver el log de nuestro contenedor deberemos copiar el id del contenedor:
 ```bash
 docker logs <id-contenedor>
 ```
+![Imagen de prueba](img/logs.png)
+
 4. Ingresaremos a la direccion donde se alojo nuestro contenedor:
 ```bash
 http://localhost:3000/
 ```
 4. Para probar su funcionalidad deberemos abrir dos pestañas de nuestra direccion y mandar mensajes y tendremos el chat el tiempo real.
+![Imagen de prueba](img/funcion.png)
 
 ## Construccion de la aplicacion dentro del Dockerfile:
 
