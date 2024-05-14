@@ -20,7 +20,7 @@ docker ps
 ```bash
 docker logs <id-contenedor>
 ```
-![Imagen de prueba](img/logs.png)
+![Imagen de prueba](img/logsdocker.png)
 
 4. Ingresaremos a la direccion donde se alojo nuestro contenedor:
 ```bash
